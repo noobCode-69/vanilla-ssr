@@ -2,7 +2,8 @@
   "name": "vanilla-ssr",
   "version": "1.0.0",
   "scripts": {
-    "dev:build:server": "webpack --config webpack.server.js"
+    "dev:server": "nodemon --watch build --exec \"node build/bundle.js\"",
+    "dev:build:server": "webpack --config webpack.server.js --watch"
   },
   "author": "",
   "license": "ISC",
